@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="password" id="password" placeholder="Enter password">
+    <input type="password" id="confirmpassword" placeholder="Enter confirm password">
+    <span type="error1" style="color: red;"></span>
+
+    <script>
+        function test()
+        {
+            var pass = document.getElementById("password").value;
+            var conpass= document.getElementById("confirmpassword").value;
+            var msg="";
+        if(pass == conpass)
+        {
+            msg="";
+        }
+        else
+        {
+            msg="Password not matched";
+        }
+        
+        document.getElementById("error1").innerText=msg;
+        }
+        </script>
+
+</body>
+</html>

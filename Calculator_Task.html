@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    
+<form action="" name="form" class="myform">
+
+<input type="number" name="num1" placeholder="Enter first number"><br><br>
+<input type="number" name="num2" placeholder="Enter Second number"><br><br>
+
+<select name="select" id="ans">
+    <option value="">Select</option>
+    <option value="add">Addition</option>
+    <option value="sub">Substraction</option>
+    <option value="mul">Multiplication</option>
+    <option value="div">Division</option>
+</select>
+
+<br><br>
+
+<button onclick="getnum()">Submit</button>
+
+</form>
+
+</body>
+
+<script>
+
+function getnum(){
+    const num1 = document.form.num1.value;
+    const num2 = document.form.num2.value;
+    let result;
+
+    let ans = document.form.select.value;
+
+    if (ans=="add") {
+        result = num1 + num2;
+        alert("Addition :"+ result);
+    }
+
+    else if (ans == "sub") {
+        result = num1 - num2;
+        alert("Substraction :" + result);
+    }
+
+    else if (ans == "mul") {
+        result = num1 * num2;
+        alert("Multiplication :" + result);
+    }
+
+    else if (ans == "div") {
+        result = num1 / num2;
+        alert("Division :" + result);
+    }
+
+    else {
+        alert("incorrect choice");
+    }
+}
+
+</script>
+
+</html>

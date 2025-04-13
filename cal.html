@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calculator">
+        <input type="number" placeholder="Enter first number" name="num1"><br><br>
+        <input type="number" placeholder="Enter second number" name="num2"><br><br>
+        <label for="ad">calculate</label>
+      <select>
+        <option selected disabled>--Select--</option>
+        <option value="add">add</option>
+        <option value="sub">sub</option>
+        <option value="multiply">multiply</option>
+        <option value="divide">divide</option>
+     </select><br><br>
+
+        <button type="button" onclick="cal()">Submit</button>
+        <h2 id="result"></h2>
+
+    </form>
+    <script>
+        function cal()
+        {
+            var num1=Number(document.myform.num1.value);
+            var num2=Number(document.myform.num2.value);
+            var result;
+
+            switch (operation) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "sub":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = "Error: Division by zero.";
+                    }
+                    break;
+                default:
+                    result = "Invalid operation.";
+            }
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

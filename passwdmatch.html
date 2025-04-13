@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="password" id="pass" placeholder="Enter password"><br><br>
+    <input type="password" id="cpass" placeholder="Enter confirm password" onkeyup="passcheck()"><br><br>
+    <span id="error1" style="color: green;"></span>
+    <span id="error2" style="color: red;"></span>
+
+    <script>
+        function passcheck()
+        {
+            var pass = document.getElementById("pass").value;
+            var cpass = document.getElementById("cpass").value;
+            var msg1="";
+            var msg2="";
+
+        if(pass==cpass)
+        {
+            msg1="Password Match";
+            
+        }
+        else
+        {
+            msg2="Password not matched";
+        }
+
+        document.getElementById("error1").innerText=msg1;
+        document.getElementById("error2").innerText=msg2;
+        }
+    </script>
+</body>
+</html>

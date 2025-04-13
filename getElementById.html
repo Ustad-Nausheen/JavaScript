@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="firstname" placeholder="Enter your first name"><br><br>
+    <button type="button" onclick="test()">Submit</button>
+
+    <script>
+        function test()
+        {
+            let fname = document.getElementById("firstname").value;
+            
+        if(fname.length >= 2 && fname.length <= 10)
+        {
+            
+
+        }
+        else
+        {
+            alert("Incorrect");
+        }
+            // alert("My name is "+fname);
+        }
+    </script>
+</body>
+</html>

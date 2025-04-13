@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="num1" placeholder="Enter number 1"><br><br>
+    <input type="number" id="num2" placeholder="Enter number 2"><br><br>
+    <select id="choice">
+        <option>Addition</option>
+        <option>Substraction</option>
+        <option>Multiplication</option>
+        <option>Division</option>
+    </select><br><br>
+
+    <button type="button" onclick="calculator()">submit</button>
+
+    <script>
+        function calculator()
+        {
+            var n1 = Number(document.getElementById("num1").value);
+            var n2 = Number(document.getElementById("num2").value);
+            var ch = document.getElementById("choice").value;
+            
+
+            if(ch == "Addition")
+            {
+                alert(n1+n2);
+            }
+            else if(ch == "Substraction")
+            {
+                alert(n1-n2);
+            }
+            else if(ch == "Multiplication")
+            {
+                alert(n1*n2);
+            }
+            else if(ch == "Division")
+            {
+                alert(n1/n2);
+            }
+        }
+    </script>
+</body>
+</html>

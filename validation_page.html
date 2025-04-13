@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>Form with Validation</h2>
+
+<form id="myForm" onsubmit="return validateForm()" method="post">
+    
+    <input type="text" id="firstName" name="firstName" placeholder="Enter first name"><br><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter last name"><br><br> 
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+    <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter contact number"><br><br>
+    <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter confirm password"><br><br>
+    <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+
+    <select id="passoutYear" name="passoutYear">
+        <option value="">Select Year</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="form-validation.js"></script>
+
+</body>
+</html>

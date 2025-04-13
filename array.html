@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //type->1.
+        // const ides = [101,102,103,104,105];
+        // document.write(ides[0],"<br>");
+        // document.write(ides[1],"<br>");
+        // document.write(ides[2],"<br>");
+        // document.write(ides[3],"<br>");
+        // document.write(ides[4],"<br>");
+
+        //type->2.
+        // const ids = new Array(101,102,103,104,105);
+        // for(let i=0;i<ids.length;i++)
+        // {
+        //     document.write(ids[i],"<br><br>");
+        // }
+
+        //type->3.
+        // const student = {"id":101,"name":"xyz","city":"Pune","pincode":1234};
+        // document.write(student.id+" "+student.name+" "+student.city+" "+student.pincode);
+       
+        // document.write(student.id,"<br><br>");
+        // document.write(student.name,"<br><br>");
+        // document.write(student.city,"<br><br>");
+        // document.write(student.pincode,"<br><br>");
+       
+        //sum of number using array
+        // const myarray = [10,20,30,40,50];
+        // var sum = 0;
+
+        // for(let i=0;i<myarray.length;i++)
+        // {
+        //     sum = sum + myarray[i];
+        //     sum += myarray[i];
+        // }
+
+        // document.write("Addtition="+sum);
+
+        //ex:50 20 30 40 10
+        // let myarray = [10,20,30,40,50];
+        
+        // const temp = myarray[0];
+        // myarray[0] = myarray[4];
+        // myarray[4] = temp;
+        // document.write(myarray);
+
+        //ex:
+        let myarray = [10,20,30,40,50];
+        document.write("Array before swapping ="+myarray+"<br>");
+
+        let temp = myarray[0];
+        myarray[0] = myarray[myarray.length-1];
+        myarray[myarray.length-1] = temp;
+
+        document.write("Updated Array: "+myarray);
+        
+
+       
+    </script>
+</body>
+</html>
